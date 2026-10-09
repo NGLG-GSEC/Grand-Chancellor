@@ -3299,12 +3299,12 @@ document.getElementById("uploadInput").addEventListener("change", onUploadFileCh
    download-then-upload step. The token is held in this browser's storage
    only (same IndexedDB the saved versions use) and is never written into
    the repo or into an exported file. */
-const GH_OWNER = "dskiad";
+const GH_OWNER = "NGLG-GSEC";
 const GH_REPO  = "Grand-Chancellor";
 const GH_BRANCH = "main";
 const GH_PATH  = "recognition/regularity-2026august.html";
 const GH_TOKEN_KEY = "nglg-gh-token";
-const GH_SITE  = "https://" + GH_OWNER + ".github.io/" + GH_REPO + "/" + GH_PATH;
+const GH_SITE  = "https://" + GH_OWNER.toLowerCase() + ".github.io/" + GH_REPO + "/" + GH_PATH;
 
 function ghSetStatus(msg, kind){
   const el = document.getElementById("ghStatus");
